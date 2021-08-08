@@ -4,9 +4,10 @@
 git clone git@github.com:qmk/qmk_firmware.git
 cd qmk_firmware
 cd keyboards/lily58/keymaps
-make git-submodule
 git submodule add https://github.com/stee1rat/my-lily58-keymap.git steelrat
+make git-submodule
 cd -
+make lily58:steelrat:avrdude
 ```
 
 ### QWERTY
