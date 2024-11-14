@@ -20,18 +20,32 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define SPLIT_USB_DETECT
-#define RGBLIGHT_SPLIT
-/* Select hand configuration */
-
-#define MASTER_LEFT
-// #define MASTER_RIGHT
-#define EE_HANDS
-
-#define USE_SERIAL_PD2
-
-#define TAPPING_FORCE_HOLD
+#define QUICK_TAP_TERM 0
 #define TAPPING_TERM 100
+
+#undef RGBLIGHT_LED_COUNT
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#define RGBLIGHT_EFFECT_SNAKE
+#define RGBLIGHT_EFFECT_KNIGHT
+#define RGBLIGHT_EFFECT_CHRISTMAS
+#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#define RGBLIGHT_EFFECT_RGB_TEST
+#define RGBLIGHT_EFFECT_ALTERNATING
+#define RGBLIGHT_EFFECT_TWINKLE
+#define RGBLIGHT_LED_COUNT 27
+#define RGBLIGHT_LIMIT_VAL 120
+#define RGBLIGHT_HUE_STEP 10
+#define RGBLIGHT_SAT_STEP 17
+#define RGBLIGHT_VAL_STEP 17
+
+/*#define ENCODER_A_PINS { }
+#define ENCODER_B_PINS { }
+#define ENCODER_RESOLUTIONS { }
+#define ENCODER_A_PINS_RIGHT { D1 }
+#define ENCODER_B_PINS_RIGHT { D0 }
+#define ENCODER_RESOLUTIONS_RIGHT { 4 }*/
 
 #define ENCODERS_PAD_A { F4 }
 #define ENCODERS_PAD_B { F5 }
@@ -39,16 +53,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_B_RIGHT { F5 }
 #define ENCODER_RESOLUTION 2
 
+
 // Underglow
-
-#undef RGBLED_NUM
-#define RGBLED_NUM 27    // Number of LEDs
-#define RGBLIGHT_LIMIT_VAL 120
-#define RGBLIGHT_HUE_STEP 10
-#define RGBLIGHT_SAT_STEP 17
-#define RGBLIGHT_VAL_STEP 17
-
-//#define RGBLIGHT_ANIMATIONS
-//#define RGBLIGHT_SLEEP
-
-//#define BACKLIGHT_PINS { F5, B2 }
+/*
+#undef RGBLIGHT_LED_COUNT
+#define RGBLIGHT_LED_COUNT 14    // Number of LEDs
+#define RGBLIGHT_SLEEP
+*/

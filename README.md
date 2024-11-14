@@ -3,11 +3,13 @@
 ```
 git clone git@github.com:qmk/qmk_firmware.git
 cd qmk_firmware
+python3 -m venv env
+. env/bin/activate
 cd keyboards/lily58/keymaps
 git submodule add https://github.com/stee1rat/my-lily58-keymap.git steelrat
 make git-submodule
-cd -
-make lily58:steelrat:avrdude
+qmk compile -kb lily58 -km steelrat
+qmk flash -kb lily58 -km steelrat
 ```
 
 ### QWERTY
